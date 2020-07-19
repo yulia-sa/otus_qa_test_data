@@ -69,6 +69,8 @@ if __name__ == '__main__':
             book = books_list.pop()
             user_books = user["books"]
             user_books.append(book)
+        else:
+            break
 
     # запишем выходной файл
     write_users_with_books_json(OUTPUT_JSON_FILE, users_with_books_list)
